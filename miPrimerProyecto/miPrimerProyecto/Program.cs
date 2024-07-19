@@ -3,35 +3,41 @@
 namespace miPrimerProyecto {
     internal class Program {
         static void Main(string[] args) {
-            //Ejercicio: pedir el nombre y la edad y determinar segun la edad la clasificacion en la que se encuentra el usuario.
-            String continuar = "s";
-            while (continuar == "s") {
-                Console.Write("Nombre: ");
-                String nombre = Console.ReadLine();
+            //Ejercicio: determinar segun el numero de dia (1-7) el dia (Domingo a Sabado)
+            Console.Write("Numero del dia: ");
+            int ndia = int.Parse(Console.ReadLine());
 
-                Console.Write("Edad: ");
-                int edad = int.Parse(Console.ReadLine()); //"5"=> 5
-
-                string msg = "";
-
-                if (edad < 0 || edad > 125) {
-                    msg = "Por favor, ingrese su edad en un rango de 0 a 125";
-                } else if (edad <= 2) {
-                    msg = "{0}, Eres un bebe";
-                } else if (edad <= 11) {
-                    msg = "{0}, Eres un niño";
-                } else if (edad <= 17) {
-                    msg = "{0}, Eres un adolescente";
-                } else if (edad <= 65) {
-                    msg = "{0},Eres un adulto";
-                } else if (edad <= 125) {
-                    msg = "{0}, Larga vida";
-                }
-                Console.WriteLine(msg, nombre);
-
-                Console.WriteLine("Continuar = s; Salir = Cualquier tecla. ");
-                continuar = Console.ReadLine();
+            string msg = "";
+            switch (ndia) {
+                case 1:
+                    msg = "el numero {0}, equivale a domingo";
+                    break;
+                case 2:
+                    msg = "el numero {0}, equivale a lunes";
+                    break;
+                case 3:
+                    msg = "el numero {0}, equivale a martes";
+                    break;
+                case 4:
+                    msg = "el numero {0}, equivale a miercoles";
+                    break;
+                case 5:
+                    msg = "el numero {0}, equivale a jueves";
+                    break;
+                case 6:
+                    msg = "el numero {0}, equivale a viernes";
+                    break;
+                case 7:
+                    msg = "el numero {0}, equivale a sabado";
+                    break;
+                default:
+                    msg = "Por favor ingrese un numero comprendido entre 1 y 7.";
+                    break;
             }
+            Console.WriteLine(msg, ndia);
+
+            //Pausa
+            Console.ReadLine();
         }
     }
 }

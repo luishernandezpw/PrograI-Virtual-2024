@@ -13,23 +13,22 @@ namespace miPrimerProyecto {
 
                 Console.Write("Opcion: ");
                 int opcion = int.Parse(Console.ReadLine());
+                Console.Clear();
                 switch (opcion) {
                     case 1:
                         parImpar();
                         break;
-
                     case 2:
                         diaSemana();
                         break;
-
                     case 3:
                         tablaMultiplicar();
                         break;
-
                     case 4:
                         continuar = "a";
                         break;
                 }
+                Console.WriteLine("\n");
             }
         }
         static void tablaMultiplicar() {

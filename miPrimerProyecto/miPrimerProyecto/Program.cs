@@ -36,6 +36,10 @@ namespace miPrimerProyecto {
             }
             Console.WriteLine(msg, ndia);
 
+            //Ejercicio 5 de la tarea.
+            // 1 + 2 0 = 3 / 2 = 1.5
+            // 1 + 2 + 5 + 7 + 8 + 3 0 = 26 / 6 = 4.33
+
             //Pausa
             Console.ReadLine();
         }

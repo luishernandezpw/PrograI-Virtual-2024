@@ -1,0 +1,12 @@
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\bin\Debug\db_facturacion.mdf
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\bin\Debug\db_facturacion_log.ldf
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\bin\Debug\facturacion.exe.config
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\bin\Debug\facturacion.exe
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\bin\Debug\facturacion.pdb
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.csproj.AssemblyReference.cache
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.Form1.resources
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.Properties.Resources.resources
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.csproj.GenerateResource.cache
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.csproj.CoreCompileInputs.cache
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.exe
+C:\Users\Luis Hernandez\Desktop\PrograI-Virtual-2024\facturacion\facturacion\obj\Debug\facturacion.pdb

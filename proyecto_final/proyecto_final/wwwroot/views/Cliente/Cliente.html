@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="card border-light mb-3">
+                    <div class="card-header">Registro de Clientes</div>
+                    <div class="card-body">
+                        <form id="frmClientes">
+                            <div class="row p-1">
+                                <div class="col-2">CODIGO</div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control" id="txtCodigoCliente" required />
+                                </div>
+                            </div>
+                            <div class="row p-1">
+                                <div class="col-2">NOMBRE</div>
+                                <div class="col-8">
+                                    <input type="text" class="form-control" id="txtNombreCliente" required />
+                                </div>
+                            </div>
+                            <div class="row p-1">
+                                <div class="col-2">DIRECCION</div>
+                                <div class="col-10">
+                                    <input type="text" class="form-control" id="txtDireccionCliente" required />
+                                </div>
+                            </div>
+                            <div class="row p-1">
+                                <div class="col-2">TEL</div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control" id="txtTelefonoCliente" required />
+                                </div>
+                            </div>
+                            <div class="row p-1">
+                                <div class="col-2">DUI</div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" id="txtDuiCliente" required />
+                                </div>
+                            </div>
+                            <div class="row p-1">
+                                <div class="col-12">
+                                    <input type="submit" value="Guardar" class="btn btn-primary"/>
+                                    <input type="reset" value="Nuevo" class="btn btn-warning"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                        <table class="table table-dark table-striped table-hover" id="tblListadoClientes">
+                            <thead>
+                                <tr>
+                                    <th>CODIGO</th>
+                                    <th>NOMBRE</th>
+                                    <th>DIRECCION</th>
+                                    <th>TELEFONO</th>
+                                    <th>DUI</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", event => {
+            listarClientes();
+            guardarClientes();
+        });
+        function guardarClientes() {
+            frmClientes.addEventListener("submit", async e => {
+                e.preventDefault();
+
+                let cliente = {
+                    codigo: txtCodigoCliente.value,
+                    nombre: txtNombreCliente.value,
+                    direccion: txtDireccionCliente.value,
+                    telefono: txtTelefonoCliente.value,
+                    dui: txtDuiCliente.value
+                };
+                const response = await fetch('https://localhost:7056/api/Clientes', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(cliente)
+                }),
+                    datos = await response.json();
+                console.log(datos);
+                limpiarClientes();
+                listarClientes();
+
+            });
+        }
+        function limpiarClientes(){
+            txtCodigoCliente.value = '';
+            txtNombreCliente.value = '';
+            txtDireccionCliente.value = '';
+            txtTelefonoCliente.value = '';
+            txtDuiCliente.value = '';
+        }
+        async function listarClientes() {
+            const response = await fetch('https://localhost:7056/api/Clientes', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }),clientes = await response.json();
+
+            let filas = "";
+            clientes.forEach(cliente => {
+                filas += `
+                    <tr>
+                        <td>${cliente.codigo}</td>
+                        <td>${cliente.nombre}</td>
+                        <td>${cliente.direccion}</td>
+                        <td>${cliente.telefono}</td>
+                        <td>${cliente.dui}</td>
+                    </tr>
+                `;
+            });
+            let $tblClientes = document.querySelector("#tblListadoClientes > tbody");
+            $tblClientes.innerHTML = filas;
+        }
+    </script>
+</body>
+</html>

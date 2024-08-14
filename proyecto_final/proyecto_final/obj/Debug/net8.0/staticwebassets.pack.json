@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Virtual-2024\\proyecto_final\\proyecto_final\\wwwroot\\views\\Cliente\\Cliente.html",
+      "PackagePath": "staticwebassets\\views\\Cliente\\Cliente.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.proyecto_final.props",
+      "PackagePath": "build\\proyecto_final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.proyecto_final.props",
+      "PackagePath": "buildMultiTargeting\\proyecto_final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.proyecto_final.props",
+      "PackagePath": "buildTransitive\\proyecto_final.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.proyecto_final.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

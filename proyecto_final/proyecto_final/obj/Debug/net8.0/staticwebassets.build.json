@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "CGd+FFLxXrdeVrZ2AvFPiUBGK6FDmjNMOAKpxeD/2Ao=",
+  "Source": "proyecto_final",
+  "BasePath": "_content/proyecto_final",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "proyecto_final\\wwwroot",
+      "Source": "proyecto_final",
+      "ContentRoot": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Virtual-2024\\proyecto_final\\proyecto_final\\wwwroot\\",
+      "BasePath": "_content/proyecto_final",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Virtual-2024\\proyecto_final\\proyecto_final\\wwwroot\\views\\Cliente\\Cliente.html",
+      "SourceId": "proyecto_final",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Luis Hernandez\\Desktop\\PrograI-Virtual-2024\\proyecto_final\\proyecto_final\\wwwroot\\",
+      "BasePath": "_content/proyecto_final",
+      "RelativePath": "views/Cliente/Cliente.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\views\\Cliente\\Cliente.html"
+    }
+  ]
+}
